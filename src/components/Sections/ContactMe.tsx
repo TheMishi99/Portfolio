@@ -7,7 +7,7 @@ function ContactMe() {
       className="w-full flex flex-col justify-center items-center p-2 gap-2"
     >
       <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-all duration-300">
-        <a href="#contact-me">Contact Me</a>
+        Contact Me
       </h2>
       <div className="w-full flex justify-center items-center">
         <a

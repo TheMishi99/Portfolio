@@ -1,6 +1,6 @@
 import BrandsIcons from "../utils/BrandsIcons";
 import { Project } from "../typings/my-types";
-import { Link } from "lucide-react";
+import { Github, Link } from "lucide-react";
 
 export default function ProjectsList({ projects }: { projects: Project[] }) {
   return (
@@ -9,7 +9,7 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
         return (
           <li
             key={project.id + project.title}
-            className="flex flex-col justify-between items-center p-2 gap-2 border-2 border-cyan-300 bg-cyan-500 bg-opacity-20 rounded-xl"
+            className="flex flex-col justify-between items-center p-2 gap-2 border-2 border-cyan-400 bg-cyan-500/30 rounded-xl"
           >
             <div
               id="project-img"
@@ -43,19 +43,19 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
             </div>
             <div
               id="project-links"
-              className="w-full flex-wrap flex justify-center items-center p-2 gap-2"
+              className="w-full flex flex-col sm:flex-row justify-center items-center p-2 gap-2"
             >
               <a
                 href={project.repositoryLink}
                 target="_blank"
-                className="w-full xl:w-[48%] flex justify-center items-center bg-black p-2 rounded-xl hover:bg-zinc-900 border-2 border-cyan-400"
+                className="flex justify-center items-center bg-black p-2 gap-2 rounded-xl hover:bg-zinc-800 border-2 border-cyan-400"
               >
-                Github Repository
+                <Github color="white" /> Github Repository
               </a>
               <a
                 href={project.deployLink}
                 target="_blank"
-                className="w-full xl:w-[48%] flex justify-center items-center bg-cyan-600 p-2 rounded-xl hover:bg-cyan-400 border-2 border-cyan-400"
+                className="flex justify-center items-center bg-cyan-700 p-2 gap-2 rounded-xl hover:bg-cyan-600 border-2 border-cyan-400"
               >
                 <Link color="white" />
                 Deployment Link

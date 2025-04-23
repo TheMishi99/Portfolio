@@ -7,7 +7,7 @@ function AboutMe() {
       className="flex flex-col justify-center items-center p-2 gap-2 backdrop-blur-lg rounded-xl"
     >
       <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-all duration-300">
-        <a href="#about-me">About Me</a>
+        About Me
       </h2>
       <div
         id="my-info"

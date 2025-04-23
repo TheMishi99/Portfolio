@@ -22,7 +22,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Mishi-Chat App",
+    title: "Mishi Chat",
     image: "/projectsScreenshots/MishiChatApp.png",
     description:
       "This is a chat app that I made to learn how to use WebSockets",
@@ -39,7 +39,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: "Test Mercado Pago App",
+    title: "Test Mercado Pago",
     image: "/projectsScreenshots/TestMercadoPagoApp.png",
     description:
       "At this project I implemented the Mercado Pago SDK to test the payments",
@@ -62,8 +62,8 @@ function MyProjects() {
       id="my-projects"
       className="w-full flex flex-col justify-center items-center p-2 gap-2"
     >
-      <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-all duration-300">
-        <a href="#my-projects">My Projects</a>
+      <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-colors">
+        My Projects
       </h2>
       <ProjectsList projects={projects} />
     </div>
