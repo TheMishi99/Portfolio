@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { CustomSelectOption, NavbarItem } from "../../typings/my-types";
 import Navbar from "../Navbar";
 import GamerCat from "/Gamer-Cat.jpg";
