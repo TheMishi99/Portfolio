@@ -10,7 +10,7 @@ export default function Navbar({
   return (
     <nav className="w-full flex justify-center items-center">
       <ul
-        className={`w-full flex flex-${direction} justify-center items-center py-2 gap-2 transition-all`}
+        className={`w-full flex flex-${direction} justify-center items-center p-2 gap-2`}
       >
         {navbarItems.map((navbarItem) => (
           <li

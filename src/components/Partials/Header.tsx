@@ -31,16 +31,6 @@ export default function Header() {
     setShowBurguerMenu(!showBurguerMenu);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setShowBurguerMenu(window.innerWidth < 768);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <header
       id="header"
