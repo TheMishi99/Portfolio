@@ -13,11 +13,11 @@ function AboutMe() {
         id="my-info"
         className="w-full md:max-w-[700px] flex-col md:flex-row flex justify-center items-center p-2 gap-2"
       >
-        <div id="img" className="w-[30%] flex justify-center items-center">
+        <div id="img" className="flex justify-center items-center">
           <img
             src={profilePicture}
             alt="Matias Sayago Profile Picture"
-            className="rounded-full"
+            className="size-44 rounded-full"
           />
         </div>
         <div

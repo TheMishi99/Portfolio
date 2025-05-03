@@ -4,6 +4,41 @@ import ProjectsList from "../ProjectsList";
 const projects: Project[] = [
   {
     id: 1,
+    title: "Mishiflix",
+    image: "/projectsScreenshots/Mishiflix.png",
+    description:
+      "This is a fake streaming website i made for a job application.",
+    stack: [
+      { id: 1, title: "NodeJS" },
+      { id: 2, title: "MongoDB" },
+      { id: 3, title: "NextJS" },
+      { id: 4, title: "ReactJS" },
+      { id: 5, title: "TypeScript" },
+      { id: 6, title: "TailwindCSS" },
+    ],
+    repositoryLink: "https://github.com/TheMishi99/mishiflix",
+    deployLink: "https://mishiflix.vercel.app/",
+  },
+
+  {
+    id: 2,
+    title: "Mishi Chat",
+    image: "/projectsScreenshots/MishiChat.png",
+    description:
+      "This is a chat app that I made to learn how to use WebSockets",
+    stack: [
+      { id: 1, title: "ExpressJS" },
+      { id: 2, title: "MongoDB" },
+      { id: 3, title: "NodeJS" },
+      { id: 4, title: "ReactJS" },
+      { id: 5, title: "TypeScript" },
+      { id: 6, title: "TailwindCSS" },
+    ],
+    repositoryLink: "https://github.com/TheMishi99/Mishi-Chat",
+    deployLink: "https://mishi-chat.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Mercado Liebre",
     image: "/projectsScreenshots/MercadoLiebre.png",
     description:
@@ -21,26 +56,9 @@ const projects: Project[] = [
     deployLink: "https://mercado-liebre-flame.vercel.app/",
   },
   {
-    id: 2,
-    title: "Mishi Chat",
-    image: "/projectsScreenshots/MishiChatApp.png",
-    description:
-      "This is a chat app that I made to learn how to use WebSockets",
-    stack: [
-      { id: 1, title: "ExpressJS" },
-      { id: 2, title: "MongoDB" },
-      { id: 3, title: "NodeJS" },
-      { id: 4, title: "ReactJS" },
-      { id: 5, title: "TypeScript" },
-      { id: 6, title: "TailwindCSS" },
-    ],
-    repositoryLink: "https://github.com/TheMishi99/Mishi-Chat",
-    deployLink: "https://mishi-chat.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "Test Mercado Pago",
-    image: "/projectsScreenshots/TestMercadoPagoApp.png",
+    id: 4,
+    title: "E Cat",
+    image: "/projectsScreenshots/ECat.png",
     description:
       "At this project I implemented the Mercado Pago SDK to test the payments",
     stack: [

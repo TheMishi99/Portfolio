@@ -34,6 +34,7 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
                     <li
                       key={tech.id + tech.title}
                       className="flex-1 flex justify-center items-center text-center"
+                      title={tech.title}
                     >
                       {BrandsIcons[tech.title]}
                     </li>
