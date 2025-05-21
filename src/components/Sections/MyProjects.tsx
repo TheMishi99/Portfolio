@@ -16,14 +16,14 @@ const projects: Project[] = [
       { id: 5, title: "TypeScript" },
       { id: 6, title: "TailwindCSS" },
     ],
-    repositoryLink: "https://github.com/TheMishi99/mishiflix",
+    repositoryLink: "https://github.com/TheMishi99/Mishiflix",
     deployLink: "https://mishiflix.vercel.app/",
   },
 
   {
     id: 2,
     title: "Mishi Chat",
-    image: "/projectsScreenshots/MishiChat.png",
+    image: "/projectsScreenshots/Mishi-Chat.png",
     description:
       "This is a chat app that I made to learn how to use WebSockets",
     stack: [
@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Mercado Liebre",
-    image: "/projectsScreenshots/MercadoLiebre.png",
+    image: "/projectsScreenshots/Mercado-Liebre.png",
     description:
       "This is a fake e-commerce website that i made as final project for course in CoderHouse",
     stack: [
@@ -58,7 +58,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "E Cat",
-    image: "/projectsScreenshots/ECat.png",
+    image: "/projectsScreenshots/E-Cat.png",
     description:
       "At this project I implemented the Mercado Pago SDK to test the payments",
     stack: [
@@ -69,8 +69,8 @@ const projects: Project[] = [
       { id: 5, title: "TypeScript" },
       { id: 6, title: "TailwindCSS" },
     ],
-    repositoryLink: "https://github.com/TheMishi99/test-mercado-pago-app",
-    deployLink: "https://test-mercado-pago-app.vercel.app/",
+    repositoryLink: "https://github.com/TheMishi99/E-Cat",
+    deployLink: "https://e-cat.vercel.app/",
   },
 ];
 
