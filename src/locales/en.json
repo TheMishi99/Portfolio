@@ -1,0 +1,43 @@
+{
+  "header": {
+    "about": "About Me",
+    "projects": "My Projects",
+    "contact": "Contact Me",
+    "change_language": "Change Language"
+  },
+  "hero": {
+    "name_prefix": "My Name is",
+    "name": "Matias Sayago",
+    "description_1": "I'm a 2 years experienced",
+    "description_highlighted": "Full Stack Web Developer",
+    "description_2": "with a passion for creating efficient, scalable, and user-friendly web applications.",
+    "stack_info": "My Main Stack is",
+    "stack_info_highlighted": "MERN (MongoDB, Express, React, NodeJS)",
+    "framework_info_1": "I'm also familiarized with",
+    "framework_info_highlighted": "NextJS",
+    "framework_info_2": ", the React Framework.",
+    "footer": "I'm always looking for new challenges and opportunities to learn and grow as a developer."
+  },
+  "projects": {
+    "title": "My Projects",
+    "github_repo": "Github Repository",
+    "deployment": "Deployment Link",
+    "items": {
+      "mishiflix": {
+        "description": "This is a fake streaming website i made for a job application."
+      },
+      "mishi_chat": {
+        "description": "This is a chat app that I made to learn how to use WebSockets."
+      },
+      "mercado_liebre": {
+        "description": "This is a fake e-commerce website that i made as final project for course in CoderHouse."
+      },
+      "e_cat": {
+        "description": "At this project I implemented the Mercado Pago SDK to test the payments."
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

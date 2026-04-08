@@ -1,0 +1,43 @@
+{
+  "header": {
+    "about": "Sobre Mí",
+    "projects": "Mis Proyectos",
+    "contact": "Contacto",
+    "change_language": "Cambiar Idioma"
+  },
+  "hero": {
+    "name_prefix": "Mi nombre es",
+    "name": "Matias Sayago",
+    "description_1": "Soy un",
+    "description_highlighted": "Desarrollador Web Full Stack",
+    "description_2": "con 2 años de experiencia y pasión por crear aplicaciones web eficientes, escalables y fáciles de usar.",
+    "stack_info": "Mi Stack principal es",
+    "stack_info_highlighted": "MERN (MongoDB, Express, React, NodeJS)",
+    "framework_info_1": "También estoy familiarizado con",
+    "framework_info_highlighted": "NextJS",
+    "framework_info_2": ", el Framework de React.",
+    "footer": "Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer como desarrollador."
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "github_repo": "Repositorio de Github",
+    "deployment": "Enlace de Despliegue",
+    "items": {
+      "mishiflix": {
+        "description": "Este es un sitio web de streaming ficticio que hice para una postulación laboral."
+      },
+      "mishi_chat": {
+        "description": "Esta es una aplicación de chat que hice para aprender a usar WebSockets."
+      },
+      "mercado_liebre": {
+        "description": "Este es un sitio de e-commerce ficticio que hice como proyecto final para un curso en CoderHouse."
+      },
+      "e_cat": {
+        "description": "En este proyecto implementé el SDK de Mercado Pago para probar los pagos."
+      }
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -1,21 +1,25 @@
 import { Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+const mail = "matiasdemiansayago@gmail.com";
 
 function ContactMe() {
+  const { t } = useTranslation();
   return (
     <div
       id="contact-me"
       className="w-full flex flex-col justify-center items-center p-2 gap-2"
     >
       <h2 className="flex justify-center items-center text-3xl border-b-2 border-cyan-400 hover:border-cyan-600 transition-all duration-300">
-        Contact Me
+        {t("header.contact")}
       </h2>
       <div className="w-full flex justify-center items-center">
         <a
-          href="mailto:matiasgd99@gmail.com"
+          href={`mailto:${mail}`}
           className="flex justify-center items-center gap-2 text-cyan-400 hover:text-cyan-600 transition-all duration-300"
         >
           <Mail />
-          <span>matiasgd99@gmail.com</span>
+          <span>{mail}</span>
         </a>
       </div>
     </div>

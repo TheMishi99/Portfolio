@@ -24,3 +24,7 @@ export type CustomSelectOption = {
   title: string;
   value: string;
 };
+
+/** Extrae los valores del campo 'value' de un array de opciones */
+export type CustomSelectOptionValues<O extends readonly CustomSelectOption[]> =
+  O[number]["value"];

@@ -1,8 +1,10 @@
 import BrandsIcons from "../utils/BrandsIcons";
 import { Project } from "../typings/my-types";
 import { Github, Link } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ProjectsList({ projects }: { projects: Project[] }) {
+  const { t } = useTranslation();
   return (
     <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-2 gap-2">
       {projects.map((project) => {
@@ -49,17 +51,17 @@ export default function ProjectsList({ projects }: { projects: Project[] }) {
               <a
                 href={project.repositoryLink}
                 target="_blank"
-                className="flex justify-center items-center bg-black p-2 gap-2 rounded-xl hover:bg-zinc-800 border-2 border-cyan-400"
+                className="flex justify-center items-center text-center bg-black p-2 gap-1 rounded-xl hover:bg-zinc-800 border-2 border-cyan-400"
               >
-                <Github color="white" /> Github Repository
+                <Github color="white" /> {t("projects.github_repo")}
               </a>
               <a
                 href={project.deployLink}
                 target="_blank"
-                className="flex justify-center items-center bg-cyan-700 p-2 gap-2 rounded-xl hover:bg-cyan-600 border-2 border-cyan-400"
+                className="flex justify-center items-center text-center bg-cyan-700 p-2 gap-1 rounded-xl hover:bg-cyan-600 border-2 border-cyan-400"
               >
                 <Link color="white" />
-                Deployment Link
+                {t("projects.deployment")}
               </a>
             </div>
           </li>

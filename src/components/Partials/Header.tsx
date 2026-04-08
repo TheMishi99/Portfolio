@@ -1,31 +1,20 @@
 import { useState } from "react";
-import type { CustomSelectOption, NavbarItem } from "../../typings/my-types";
+import type { NavbarItem } from "../../typings/my-types";
 import Navbar from "../Navbar";
 import GamerCat from "/Gamer-Cat.jpg";
-import CustomSelect from "../CustomSelect";
 import { Menu, X } from "lucide-react";
-
-const navbarItems: NavbarItem[] = [
-  { id: 1, title: "About Me", href: "#about-me" },
-  { id: 2, title: "My Projects", href: "#my-projects" },
-  { id: 3, title: "Contact Me", href: "#contact-me" },
-];
-
-const languageOptions: CustomSelectOption[] = [
-  {
-    id: 1,
-    title: "English",
-    value: "en",
-  },
-  {
-    id: 2,
-    title: "Spanish",
-    value: "es",
-  },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSelect from "../LanguageSelect";
 
 export default function Header() {
   const [showBurguerMenu, setShowBurguerMenu] = useState<boolean>(false);
+  const { t } = useTranslation();
+
+  const navbarItems: NavbarItem[] = [
+    { id: 1, title: t("header.about"), href: "#about-me" },
+    { id: 2, title: t("header.projects"), href: "#my-projects" },
+    { id: 3, title: t("header.contact"), href: "#contact-me" },
+  ];
 
   const onBurgerMenuButtonClick = () => {
     setShowBurguerMenu(!showBurguerMenu);
@@ -44,7 +33,7 @@ export default function Header() {
           <Navbar navbarItems={navbarItems} />
         </div>
         <div className="flex justify-center items-center p-2 gap-2">
-          <CustomSelect options={languageOptions} />
+          <LanguageSelect />
           <button
             className="flex sm:hidden justify-center items-center bg-slate-800 rounded cursor-pointer p-2"
             id="burguer-menu"
